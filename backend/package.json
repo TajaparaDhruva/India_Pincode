@@ -1,0 +1,19 @@
+{
+  "name": "pincode-explorer-backend",
+  "version": "1.0.0",
+  "description": "Backend API for PIN Code Explorer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "import": "node utils/importCSV.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "json2csv": "^6.0.0-alpha.2",
+    "mongoose": "^8.5.0"
+  }
+}
