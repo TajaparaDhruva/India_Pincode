@@ -2,10 +2,10 @@
   "name": "pincode-explorer-backend",
   "version": "1.0.0",
   "description": "Backend API for PIN Code Explorer",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js",
+    "start": "node index.js",
+    "dev": "node --watch index.js",
     "import": "node utils/importCSV.js"
   },
   "dependencies": {
