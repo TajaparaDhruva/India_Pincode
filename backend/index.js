@@ -7,6 +7,7 @@ const connectDB = require("./config/db");
 const pincodeRoutes = require("./routes/pincodeRoutes");
 
 const app = express();
+console.log("🚀 Starting server initialization...");
 const PORT = process.env.PORT || 5001;
 
 // Middleware
@@ -34,10 +35,16 @@ app.use((err, req, res, next) => {
 
 // Start server
 const startServer = async () => {
-  await connectDB();
-  app.listen(PORT, () => {
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
-  });
+  try {
+    console.log("📡 Attempting to connect to MongoDB...");
+    await connectDB();
+    app.listen(PORT, () => {
+      console.log(`🚀 Server running on http://localhost:${PORT}`);
+    });
+  } catch (error) {
+    console.error("❌ Fatal startup error:", error.message);
+    process.exit(1);
+  }
 };
 
 startServer();
