@@ -1,5 +1,8 @@
 # 🗺️ PIN Code Explorer
 
+<img width="1915" height="983" alt="image" src="https://github.com/user-attachments/assets/8b70a8cb-6795-4952-b73c-32f86b702a68" />
+
+
 A production-level full-stack web application to explore, search, and analyze India's postal PIN code data.
 
 ## Tech Stack
