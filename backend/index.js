@@ -16,6 +16,7 @@ app.use(express.json());
 
 // API Routes
 app.use("/api", pincodeRoutes);
+app.use("/", pincodeRoutes);
 
 // Health check
 app.get("/", (req, res) => {
